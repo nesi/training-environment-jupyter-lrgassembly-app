@@ -1,7 +1,7 @@
 ---
-name: Introduction to Nextflow Workshop
+name: Long-read Genome Assembly
 category: Interactive Apps
 subcategory: Servers
 role: batch_connect
 description: |
-  This app will launch a Jupyter Lab for the Introduction to Nextflow workshop
+  This app will launch a Jupyter Lab for the  Long-read Genome Assembly workshop

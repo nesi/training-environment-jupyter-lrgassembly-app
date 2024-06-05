@@ -46,11 +46,7 @@ RUN add-apt-repository -y ppa:apptainer/ppa \
     && apt install -y apptainer-suid \
     && rm -rf /var/lib/apt/lists/*
 
-
-
-
-
-
+# install applications via conda
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /miniconda.sh \
     && bash /miniconda.sh -b -p /opt/miniconda3 \
     && rm -f /miniconda.sh \
@@ -83,5 +79,5 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
     && echo "conda activate /var/lib/genome-assembly" >> /etc/profile.d/conda.sh
 
 
-    # install jupyterlab 
+# install jupyterlab 
 RUN pip3 --no-cache-dir install jupyterlab
